@@ -1,0 +1,15 @@
+import java.util.*;
+public class RevString {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter a string to reverse:");
+		String org= sc.nextLine();
+		String rev="";
+		for(int c=org.length()-1;c>=0;c--) {
+			rev=rev+org.charAt(c);
+		}
+		System.out.println(rev);
+		sc.close();
+	}
+}
