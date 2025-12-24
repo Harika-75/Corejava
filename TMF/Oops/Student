@@ -1,0 +1,20 @@
+public class Student {
+	int id;
+	String name;
+	int marks;
+	Student(int id,String name, int marks){
+		this.id=id;
+		this.name=name;
+		this.marks=marks;
+	}
+	void display() {
+		System.out.println("The Details of student is:");
+		System.out.println("Student id:"+id);
+		System.out.println("student name:"+name);
+		System.out.println("Student Marks:"+marks);
+	}
+	public static void main(String[] args) {
+		Student s= new Student(101,"Harika",200);
+		s.display();
+	}
+}
